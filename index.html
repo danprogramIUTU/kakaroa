@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KakaroaCO</title>
+    <!-- Google Fonts: Playfair Display para títulos y Montserrat para cuerpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/img/icono.ico" type="image/x-icon"  >
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="header">
+        <div class="logo">
+            <svg class="leaf-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17,8C8,10 59,16.17 3.82,21.34L5.71,22L6.58,20.56C12,16 18,9 18,9M21,3C21,3 13,4 9,9C11,13 15,15 15,15C15,15 21,8 21,3Z" />
+            </svg>
+            <span>Kakaroa</span>
+        </div>
+        <nav>
+            <a href="#catalogo" class="nav-link">CATÁLOGO</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subtitle">CACAO DE COLOMBIA AL MUNDO</span>
+            <h1 class="hero-title">Fabricado con  el mejor cacao de Colombia</h1>
+            <p class="hero-description">
+                Chocolate artesanal elaborado con cacao e ingredientes naturales, desde el origen hasta tus
+                manos.
+            </p>
+        </div>
+        <div class="hero-image-container">
+            <div class="arch-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1548907040-4baa42d10919?auto=format&fit=crop&w=800&q=80"
+                    alt="Bombones de Cacao Kakaroa" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CATÁLOGO -->
+    <section id="catalogo" class="catalog-section">
+        <div class="catalog-header">
+            <div class="catalog-header-left">
+                <span class="subtitle-light">NUESTRO CATÁLOGO</span>
+                <h2 class="catalog-title">Formas de disfrutar el cacao.</h2>
+            </div>
+            <div class="catalog-header-right">
+                <p>Descubre recetas artesanales con cacao de origen natural, frutos secos e ingredientes que
+                    reconoces.</p>
+            </div>
+        </div>
+
+        <!-- GRID DE LOS 6 PRODUCTOS -->
+        <div class="products-grid">
+
+            <!-- Producto 1 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="tag">Chispitas de Ensueño</span>
+                    <img src="/img/galletas.jpeg"
+                        alt="Galletas">
+                </div>
+                <div class="card-body">
+                    <h3>Galletas </h3>
+                    <p>Ingredientes: Harina, mantequilla, azúcar, huevo, chispas de chocolate, un toque de vainilla.</p>
+                    <button class="btn-whatsapp" onclick="orderOnWhatsApp('Trufas de cacao')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.25 3.7 8.25 8.25 0 4.55-3.7 8.25-8.25 8.25-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25" />
+                        </svg>
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+            </article>
+
+            
+            <!-- Producto 2 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="tag">Cuadros de Cacao</span>
+                    <img src="/img/Brownie.jpeg"
+                        alt="Brownie">
+                </div>
+                <div class="card-body">
+                    <h3>Brownies</h3>
+                    <p> Ingredientes: Chocolate oscuro, mantequilla, azúcar, huevos, harina, pizca de sal.</p>
+                    <button class="btn-whatsapp" onclick="orderOnWhatsApp('Barra origen')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.25 3.7 8.25 8.25 0 4.55-3.7 8.25-8.25 8.25-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25" />
+                        </svg>
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="tag">Esferas de Cacao</span>
+                    <img src="/img/Bolas.jpeg"
+                        alt="Cacao & almendras">
+                </div>
+                <div class="card-body">
+                    <h3>Cacao & almendras</h3>
+                    <p>Ingredientes: Chocolate colombiano, crema de leche, mantequilla, cacao en polvo.</p>
+                    <button class="btn-whatsapp" onclick="orderOnWhatsApp('Cacao & almendras')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.25 3.7 8.25 8.25 0 4.55-3.7 8.25-8.25 8.25-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25" />
+                        </svg>
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+            </article>
+
+            <!-- Producto 4 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="tag">Energía Andina</span>
+                    <img src="/img/BolasEnergia.jpeg"
+                        alt="Bites de energía">
+                </div>
+                <div class="card-body">
+                    <h3>Bites de energía</h3>
+                    <p> Ingredientes: Cacao en polvo, dátiles, almendras, nueces, semillas, frutas deshidratadas, un toque de miel.</p>
+                    <button class="btn-whatsapp" onclick="orderOnWhatsApp('Bites de energía')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.25 3.7 8.25 8.25 0 4.55-3.7 8.25-8.25 8.25-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25" />
+                        </svg>
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+            </article>
+
+            <!-- Producto 5 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="tag">Media Luna Dorada</span>
+                    <img src="/img/banano.jpeg"
+                        alt="Tableta 70%">
+                </div>
+                <div class="card-body">
+                    <h3>Plátano y fresas con Cobertura de Chocolate</h3>
+                    <p>Ingredientes: Plátano fresco, chocolate colombiano oscuro.</p>
+                    <button class="btn-whatsapp" onclick="orderOnWhatsApp('Tableta 70%')">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.55 0 8.25 3.7 8.25 8.25 0 4.55-3.7 8.25-8.25 8.25-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.19 8.19 0 0 1-1.26-4.38c0-4.55 3.7-8.25 8.25-8.25" />
+                        </svg>
+                        Pedir por WhatsApp
+                    </button>
+                </div>
+            </article>
+
+            <!-- Producto 6 -->
+            <article class="product-card">
+                <div class="card-image-wrapper">
+                    <span class="tag">Proximamente</span>
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
+                        alt="Brownie de cacao">
+                </div>
+                <div class="card-body">
+                    <h3>Productos en desarrollo</h3>
+                    <p>Nuevas combinaciones en un mundo de posibilidades</p>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>
